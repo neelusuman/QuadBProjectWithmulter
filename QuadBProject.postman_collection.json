@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "3f30b364-b0cc-422b-acf1-e2b966766fb3",
+		"name": "QuadBProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22950708",
+		"_collection_link": "https://martian-spaceship-745358.postman.co/workspace/relevel~8bf72736-7bef-4732-bfe7-0f6e59292f67/collection/22950708-3f30b364-b0cc-422b-acf1-e2b966766fb3?action=share&source=collection_link&creator=22950708"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_name",
+							"value": "\"King\"",
+							"type": "text"
+						},
+						{
+							"key": "user_email",
+							"value": "\"summm2224@gmail.com\"",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "user_password",
+							"value": "\"ancdddde\"",
+							"type": "text"
+						},
+						{
+							"key": "\"total_orders\"",
+							"value": "\"6\"",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/ASUS/Downloads/Default_vector_t_shirt_design_vector_illustration_abstract_rep_0_4cc9bc1e-c6d7-4d3d-ac0c-4a6a98e235ee_1.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:2047/quadb/api/v1/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2047",
+					"path": [
+						"quadb",
+						"api",
+						"v1",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_name",
+							"value": "\"King\"",
+							"type": "text"
+						},
+						{
+							"key": "user_email",
+							"value": "\"summm2224@gmail.com\"",
+							"type": "text"
+						},
+						{
+							"key": "user_password",
+							"value": "\"ancdddde\"",
+							"type": "text"
+						},
+						{
+							"key": "total_orders",
+							"value": "\"6\"",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/ASUS/Downloads/Default_vector_t_shirt_design_vector_illustration_abstract_rep_0_4cc9bc1e-c6d7-4d3d-ac0c-4a6a98e235ee_1.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:2047/quadb/api/v1/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2047",
+					"path": [
+						"quadb",
+						"api",
+						"v1",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_name",
+							"value": "\"King\"",
+							"type": "text"
+						},
+						{
+							"key": "user_email",
+							"value": "\"s2224@gmail.com\"",
+							"type": "text"
+						},
+						{
+							"key": "user_password",
+							"value": "\"ancdddde\"",
+							"type": "text"
+						},
+						{
+							"key": "total_orders",
+							"value": "\"6\"",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/ASUS/Downloads/Default_vector_t_shirt_design_vector_illustration_abstract_rep_0_4cc9bc1e-c6d7-4d3d-ac0c-4a6a98e235ee_1.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:2049/quadb/api/v1/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2049",
+					"path": [
+						"quadb",
+						"api",
+						"v1",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Username&PasswordRequired",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_email\":\"summm2224@gmail.com\",\r\n    \"user_name\":\"abc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2047/quadb/api/v1/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2047",
+					"path": [
+						"quadb",
+						"api",
+						"v1",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EmailAlreadyexist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_email\":\"summm2224@gmail.com\",\r\n    \"user_name\":\"abc\",\r\n    \"user_password\":\"eejh@g\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2049/quadb/api/v1/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2049",
+					"path": [
+						"quadb",
+						"api",
+						"v1",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2049/quadb/api/v1/details/22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2049",
+					"path": [
+						"quadb",
+						"api",
+						"v1",
+						"details",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteAPI",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2049/quadb/api/v1/delete/22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2049",
+					"path": [
+						"quadb",
+						"api",
+						"v1",
+						"delete",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetImage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2049/quadb/api/v1/image/23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2049",
+					"path": [
+						"quadb",
+						"api",
+						"v1",
+						"image",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NoToken provided",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"user_name\":\"dee\",\r\n   \"user_password\":\"dsjdef\",\r\n   \"user_email\":\"ash@gmail.com\",\r\n   \"total_orders\":\"6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2049/quadb/api/v1/update/23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2049",
+					"path": [
+						"quadb",
+						"api",
+						"v1",
+						"update",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatedUser",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlpUWlNRNyIsImlhdCI6MTY5NTczNDc3MCwiZXhwIjoxNjk1ODU0NzcwfQ.XsPGsbx0d1GFXZ7y04SRLbwaX9HNkR85l98pDr2auok",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"user_name\":\"dee\",\r\n   \"user_password\":\"dsjdef\",\r\n   \"user_email\":\"ash@gmail.com\",\r\n   \"total_orders\":\"6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2049/quadb/api/v1/update/23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2049",
+					"path": [
+						"quadb",
+						"api",
+						"v1",
+						"update",
+						"23"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
